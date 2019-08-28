@@ -1564,7 +1564,7 @@ EventScript_27222B:: @ 827222B
 	delay 30
 	applymovement EVENT_OBJ_ID_PLAYER, Common_Movement_WalkInPlaceUp
 	waitmovement 0
-	showobjectat 255, MAP_PETALBURG_CITY
+	@ showobjectat 255, MAP_PETALBURG_CITY
 	delay 30
 	applymovement EVENT_OBJ_ID_PLAYER, Movement_27224E
 	waitmovement 0
@@ -1585,7 +1585,7 @@ SouthernIsland_Exterior_EventScript_272250:: @ 8272250
 	compare VAR_FACING, 3
 	call_if_eq BattleFrontier_OutsideWest_EventScript_242A2C
 	delay 30
-	hideobjectat 255, MAP_PETALBURG_CITY
+	@ hideobjectat 255, MAP_PETALBURG_CITY
 	call BattleFrontier_OutsideWest_EventScript_2721E2
 	return
 
@@ -2872,48 +2872,48 @@ UnusualWeather_EventScript_CleanupRoute129East:: @ 82741B6
 	return
 
 UnusualWeather_Underwater_SetupEscapeWarp:: @ 8274223
-	switch VAR_UNUSUAL_WEATHER_LOCATION
-	case UNUSUAL_WEATHER_ROUTE_105_NORTH, UnusualWeather_Underwater_SetupEscapeWarpRoute105North
-	case UNUSUAL_WEATHER_ROUTE_105_SOUTH, UnusualWeather_Underwater_SetupEscapeWarpRoute105South
-	case UNUSUAL_WEATHER_ROUTE_125_WEST, UnusualWeather_Underwater_SetupEscapeWarpRoute125West
-	case UNUSUAL_WEATHER_ROUTE_125_EAST, UnusualWeather_Underwater_SetupEscapeWarpRoute125East
-	case UNUSUAL_WEATHER_ROUTE_127_NORTH, UnusualWeather_Underwater_SetupEscapeWarpRoute127North
-	case UNUSUAL_WEATHER_ROUTE_127_SOUTH, UnusualWeather_Underwater_SetupEscapeWarpRoute127South
-	case UNUSUAL_WEATHER_ROUTE_129_WEST, UnusualWeather_Underwater_SetupEscapeWarpRoute129West
-	case UNUSUAL_WEATHER_ROUTE_129_EAST, UnusualWeather_Underwater_SetupEscapeWarpRoute129East
+@ 	switch VAR_UNUSUAL_WEATHER_LOCATION
+@ 	case UNUSUAL_WEATHER_ROUTE_105_NORTH, UnusualWeather_Underwater_SetupEscapeWarpRoute105North
+@ 	case UNUSUAL_WEATHER_ROUTE_105_SOUTH, UnusualWeather_Underwater_SetupEscapeWarpRoute105South
+@ 	case UNUSUAL_WEATHER_ROUTE_125_WEST, UnusualWeather_Underwater_SetupEscapeWarpRoute125West
+@ 	case UNUSUAL_WEATHER_ROUTE_125_EAST, UnusualWeather_Underwater_SetupEscapeWarpRoute125East
+@ 	case UNUSUAL_WEATHER_ROUTE_127_NORTH, UnusualWeather_Underwater_SetupEscapeWarpRoute127North
+@ 	case UNUSUAL_WEATHER_ROUTE_127_SOUTH, UnusualWeather_Underwater_SetupEscapeWarpRoute127South
+@ 	case UNUSUAL_WEATHER_ROUTE_129_WEST, UnusualWeather_Underwater_SetupEscapeWarpRoute129West
+@ 	case UNUSUAL_WEATHER_ROUTE_129_EAST, UnusualWeather_Underwater_SetupEscapeWarpRoute129East
 	return
 
-UnusualWeather_Underwater_SetupEscapeWarpRoute105North:: @ 8274281
-	setescapewarp MAP_ROUTE105, 255, 11, 29
-	return
+@ UnusualWeather_Underwater_SetupEscapeWarpRoute105North:: @ 8274281
+@ 	setescapewarp MAP_ROUTE105, 255, 11, 29
+@ 	return
 
-UnusualWeather_Underwater_SetupEscapeWarpRoute105South:: @ 827428A
-	setescapewarp MAP_ROUTE105, 255, 21, 54
-	return
+@ UnusualWeather_Underwater_SetupEscapeWarpRoute105South:: @ 827428A
+@ 	setescapewarp MAP_ROUTE105, 255, 21, 54
+@ 	return
 
-UnusualWeather_Underwater_SetupEscapeWarpRoute125West:: @ 8274293
-	setescapewarp MAP_ROUTE125, 255, 9, 17
-	return
+@ UnusualWeather_Underwater_SetupEscapeWarpRoute125West:: @ 8274293
+@ 	setescapewarp MAP_ROUTE125, 255, 9, 17
+@ 	return
 
-UnusualWeather_Underwater_SetupEscapeWarpRoute125East:: @ 827429C
-	setescapewarp MAP_ROUTE125, 255, 54, 19
-	return
+@ UnusualWeather_Underwater_SetupEscapeWarpRoute125East:: @ 827429C
+@ 	setescapewarp MAP_ROUTE125, 255, 54, 19
+@ 	return
 
-UnusualWeather_Underwater_SetupEscapeWarpRoute127North:: @ 82742A5
-	setescapewarp MAP_ROUTE127, 255, 58, 10
-	return
+@ UnusualWeather_Underwater_SetupEscapeWarpRoute127North:: @ 82742A5
+@ 	setescapewarp MAP_ROUTE127, 255, 58, 10
+@ 	return
 
-UnusualWeather_Underwater_SetupEscapeWarpRoute127South:: @ 82742AE
-	setescapewarp MAP_ROUTE127, 255, 62, 31
-	return
+@ UnusualWeather_Underwater_SetupEscapeWarpRoute127South:: @ 82742AE
+@ 	setescapewarp MAP_ROUTE127, 255, 62, 31
+@ 	return
 
-UnusualWeather_Underwater_SetupEscapeWarpRoute129West:: @ 82742B7
-	setescapewarp MAP_ROUTE129, 255, 17, 15
-	return
+@ UnusualWeather_Underwater_SetupEscapeWarpRoute129West:: @ 82742B7
+@ 	setescapewarp MAP_ROUTE129, 255, 17, 15
+@ 	return
 
-UnusualWeather_Underwater_SetupEscapeWarpRoute129East:: @ 82742C0
-	setescapewarp MAP_ROUTE129, 255, 43, 20
-	return
+@ UnusualWeather_Underwater_SetupEscapeWarpRoute129East:: @ 82742C0
+@ 	setescapewarp MAP_ROUTE129, 255, 43, 20
+@ 	return
 
 Std_RegisteredInMatchCall:: @ 82742C9
 	buffertrainerclassname 0, VAR_0x8000
@@ -5029,7 +5029,7 @@ BattleFrontier_BattlePikeRandomRoom1_EventScript_2C3EE8:: @ 82C3EE8
 	goto_if_eq BattleFrontier_BattlePikeRandomRoom1_EventScript_2C3F35
 	compare VAR_RESULT, 8
 	goto_if_eq BattleFrontier_BattlePikeRandomRoom1_EventScript_2C3F3F
-	hideobjectat 2, MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM1
+	@ hideobjectat 2, MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM1
 	setvar VAR_TEMP_4, 1
 	turnobject 255, 2
 	end
@@ -5042,7 +5042,7 @@ BattleFrontier_BattlePikeRandomRoom1_EventScript_2C3F35:: @ 82C3F35
 BattleFrontier_BattlePikeRandomRoom1_EventScript_2C3F3F:: @ 82C3F3F
 	setvar VAR_TEMP_4, 1
 	turnobject 255, 2
-	hideobjectat 1, MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM1
+	@ hideobjectat 1, MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM1
 	end
 
 BattleFrontier_BattlePikeThreePathRoom_EventScript_2C3F4E:: @ 82C3F4E
@@ -5097,7 +5097,7 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_2C4030:: @ 82C4030
 	applymovement EVENT_OBJ_ID_PLAYER, BattleFrontier_BattlePikeThreePathRoom_Movement_2C427A
 	waitmovement 0
 	call BattleFrontier_BattlePikeThreePathRoom_EventScript_25BB49
-	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM1, 255, 4, 7
+	@ warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM1, 255, 4, 7
 	waitstate
 	end
 
@@ -5105,7 +5105,7 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_2C4049:: @ 82C4049
 	applymovement EVENT_OBJ_ID_PLAYER, BattleFrontier_BattlePikeThreePathRoom_Movement_2C427A
 	waitmovement 0
 	call BattleFrontier_BattlePikeThreePathRoom_EventScript_25BB49
-	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM3, 255, 4, 19
+	@ warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM3, 255, 4, 19
 	waitstate
 	end
 
@@ -5186,7 +5186,7 @@ BattleFrontier_BattlePikeRandomRoom3_EventScript_2C4144:: @ 82C4144
 	applymovement EVENT_OBJ_ID_PLAYER, BattleFrontier_BattlePikeRandomRoom1_Movement_2C427A
 	waitmovement 0
 	call BattleFrontier_BattlePikeRandomRoom1_EventScript_25BB49
-	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM2, 255, 2, 7
+	@ warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_RANDOM_ROOM2, 255, 2, 7
 	return
 
 BattleFrontier_BattlePikeRandomRoom1_EventScript_2C415C:: @ 82C415C
@@ -5194,7 +5194,7 @@ BattleFrontier_BattlePikeRandomRoom3_EventScript_2C415C:: @ 82C415C
 	applymovement EVENT_OBJ_ID_PLAYER, BattleFrontier_BattlePikeRandomRoom1_Movement_2C427A
 	waitmovement 0
 	call BattleFrontier_BattlePikeRandomRoom1_EventScript_25BB49
-	warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM, 255, 6, 10
+	@ warpsilent MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM, 255, 6, 10
 	return
 
 BattleFrontier_BattlePikeRandomRoom3_EventScript_2C4174:: @ 82C4174
@@ -5249,7 +5249,7 @@ BattleFrontier_BattlePikeThreePathRoom_EventScript_2C4222:: @ 82C4222
 	setvar VAR_0x8005, 0
 	setvar VAR_0x8006, 4
 	special CallFrontierUtilFunc
-	warp MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY, 255, 5, 6
+	@ warp MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY, 255, 5, 6
 	waitstate
 	end
 
@@ -6459,7 +6459,7 @@ TrainerHill_1F_EventScript_2C83A6:: @ 82C83A6
 	end
 
 TrainerHill_1F_EventScript_2C83BF:: @ 82C83BF
-	warpsilent MAP_TRAINER_HILL_ENTRANCE, 255, 9, 6
+	@ warpsilent MAP_TRAINER_HILL_ENTRANCE, 255, 9, 6
 	waitstate
 	end
 
@@ -6474,7 +6474,7 @@ TrainerHill_1F_EventScript_2C83C9:: @ 82C83C9
 TrainerHill_1F_EventScript_2C83DF:: @ 82C83DF
 TrainerHill_Entrance_EventScript_2C83DF:: @ 82C83DF
 	setvar VAR_TEMP_1, 0
-	warp MAP_TRAINER_HILL_ENTRANCE, 255, 9, 6
+	@ warp MAP_TRAINER_HILL_ENTRANCE, 255, 9, 6
 	waitstate
 	end
 

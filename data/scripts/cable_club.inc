@@ -457,7 +457,7 @@ OldaleTown_PokemonCenter_2F_EventScript_276FBD:: @ 8276FBD
 	compare VAR_0x8004, 5
 	goto_if_eq OldaleTown_PokemonCenter_2F_EventScript_277036
 	special SetCableClubWarp
-	warp MAP_SINGLE_BATTLE_COLOSSEUM, 255, 6, 8
+	@ warp MAP_SINGLE_BATTLE_COLOSSEUM, 255, 6, 8
 	special sub_80AF948
 	waitstate
 	end
@@ -469,7 +469,7 @@ OldaleTown_PokemonCenter_2F_EventScript_27702B:: @ 827702B
 
 OldaleTown_PokemonCenter_2F_EventScript_277036:: @ 8277036
 	special SetCableClubWarp
-	warp MAP_DOUBLE_BATTLE_COLOSSEUM, 255, 5, 8
+	@ warp MAP_DOUBLE_BATTLE_COLOSSEUM, 255, 5, 8
 	special sub_80AF948
 	waitstate
 	end
@@ -554,12 +554,12 @@ OldaleTown_PokemonCenter_2F_EventScript_27713A:: @ 827713A
 	waitdooranim
 	applymovement EVENT_OBJ_ID_PLAYER, OldaleTown_PokemonCenter_2F_Movement_27735A
 	waitmovement 0
-	hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
+	@ hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
 	closedoor 9, 1
 	waitdooranim
 	release
 	special SetCableClubWarp
-	setwarp MAP_TRADE_CENTER, 255, 5, 8
+	@ setwarp MAP_TRADE_CENTER, 255, 5, 8
 	special sub_80AF948
 	waitstate
 	end
@@ -629,12 +629,12 @@ OldaleTown_PokemonCenter_2F_EventScript_27724C:: @ 827724C
 	waitdooranim
 	applymovement EVENT_OBJ_ID_PLAYER, OldaleTown_PokemonCenter_2F_Movement_27735A
 	waitmovement 0
-	hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
+	@ hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
 	closedoor 9, 1
 	waitdooranim
 	release
 	special SetCableClubWarp
-	setwarp MAP_RECORD_CORNER, 255, 8, 9
+	@ setwarp MAP_RECORD_CORNER, 255, 8, 9
 	special sub_80AF948
 	waitstate
 	end
@@ -1029,12 +1029,12 @@ OldaleTown_PokemonCenter_2F_EventScript_27759F:: @ 827759F
 	waitdooranim
 	applymovement EVENT_OBJ_ID_PLAYER, OldaleTown_PokemonCenter_2F_Movement_27735A
 	waitmovement 0
-	hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
+	@ hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
 	closedoor 5, 1
 	waitdooranim
 	special sub_8018090
 	special SetCableClubWarp
-	warpteleport2 MAP_UNION_ROOM, 255, 7, 11
+	@ warpteleport2 MAP_UNION_ROOM, 255, 7, 11
 	waitstate
 	special UnionRoomSpecial
 	waitstate
@@ -1364,7 +1364,7 @@ OldaleTown_PokemonCenter_2F_EventScript_277B3A:: @ 8277B3A
 	waitdooranim
 	applymovement EVENT_OBJ_ID_PLAYER, OldaleTown_PokemonCenter_2F_Movement_27735A
 	waitmovement 0
-	hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
+	@ hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
 	closedoor 9, 1
 	waitdooranim
 	release
@@ -1573,7 +1573,7 @@ MossdeepCity_GameCorner_1F_EventScript_277E0E:: @ 8277E0E
 	closemessage
 	applymovement EVENT_OBJ_ID_PLAYER, MossdeepCity_GameCorner_1F_Movement_277360
 	waitmovement 0
-	hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
+	@ hideobjectat EVENT_OBJ_ID_PLAYER, MAP_PETALBURG_CITY
 	release
 	waitstate
 	end

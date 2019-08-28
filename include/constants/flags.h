@@ -91,10 +91,8 @@
 #define FLAG_SET_WALL_CLOCK                  0x51
 #define FLAG_RESCUED_BIRCH                   0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS       0x53
-
 #define FLAG_UNUSED_0x054                    0x54  // Unused Flag
 #define FLAG_UNUSED_0x055                    0x55  // Unused Flag
-
 #define FLAG_LINK_CONTEST_POKE_BALL          0x56
 #define FLAG_MET_RIVAL_MOM                   0x57
 #define FLAG_BIRCH_AIDE_MET                  0x58
@@ -1300,7 +1298,7 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
+#define FLAG_SYS_PREVENT_ENCOUNTERS                 (SYSTEM_FLAGS + 0x21) // Unused Flag
 #define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
 #define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
