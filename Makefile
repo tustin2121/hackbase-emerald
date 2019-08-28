@@ -108,7 +108,7 @@ MAKEFLAGS += --no-print-directory
 # Secondary expansion is required for dependency variables in object rules.
 .SECONDEXPANSION:
 
-.PHONY: all rom clean compare tidy tools mostlyclean clean-tools $(TOOLDIRS)
+.PHONY: all rom clean tidy tools mostlyclean clean-tools $(TOOLDIRS)
 
 infoshell = $(foreach line, $(shell $1 | sed "s/ /__SPACE__/g"), $(info $(subst __SPACE__, ,$(line))))
 
@@ -155,10 +155,6 @@ $(TOOLDIRS):
 	@$(MAKE) -C $@ CC=$(HOSTCC) CXX=$(HOSTCXX)
 
 rom: $(ROM)
-
-# For contributors to make sure a change didn't affect the contents of the ROM.
-compare: all
-	@$(SHA1) rom.sha1
 
 clean: mostlyclean clean-tools
 
