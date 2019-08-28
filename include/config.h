@@ -18,12 +18,4 @@
 // NOTE: Don't try to enable assert right now as many pointers
 // still exist in defines and WILL likely result in a broken ROM.
 
-#define ENGLISH
-
-#ifdef ENGLISH
-#define UNITS_IMPERIAL
-#else
-#define UNITS_METRIC
-#endif
-
 #endif // GUARD_CONFIG_H
